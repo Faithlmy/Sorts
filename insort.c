@@ -5,7 +5,7 @@ void insort(int s[], int n)
     {
         temp = s[i];
         j = i-1;
-        while (j>=0 && temp < s[j]) //注意条件
+        while (j>=0 && temp < s[j]) //注意j不能大于等于1
         {
             s[j+1] = s[j];
             j--;
