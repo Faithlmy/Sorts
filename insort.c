@@ -1,15 +1,15 @@
 void insort(int s[], int n)
 {
-    int i , j;
-    for(i = 2; i< = n ; i++)
+    int i , j , temp ;
+    for(i = 1 ; i<= n; ++i)
     {
-        s[0] = s[i];
-        j = i - 1;
-        while(s[0] < s[j])
+        temp = s[i];
+        j = i-1;
+        while (j>=0 && temp < s[j]) //注意条件
         {
             s[j+1] = s[j];
             j--;
         }
-        s[j+1] = s[0];
+        s[j+1] = temp;
     }
 }
