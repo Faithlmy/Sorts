@@ -14,7 +14,7 @@ void main()
 
         printf("input final numbs : ");
         for(int  i = 0; i<10; ++i)
-            printf("%d  ", a[i]);
+            printf("%d ", a[i]);
         printf("\n");
 
 
